@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function GeneralInfo() {
+function GeneralInfo(toggleView) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");

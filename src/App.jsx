@@ -1,9 +1,9 @@
 import { useState } from "react";
-import GeneralInfo from "./GeneralInfo";
+import ResumeTemplate from "./ResumeTemplate";
 import "./App.css";
 
 function App() {
-  return <GeneralInfo />;
+  return <ResumeTemplate />;
 }
 
 export default App;
