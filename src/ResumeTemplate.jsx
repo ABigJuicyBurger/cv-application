@@ -6,8 +6,12 @@ function ResumeTemplate() {
 
   return (
     <div>
-      <GeneralInfo />
+      <GeneralInfo view={!view} toggleView={toggleView} />
+      {/* Pass view and toggleView as props */}
+      {console.log("Current view value:", view)}
       <button onClick={() => toggleView(!view)}>Toggle View/Edit</button>
     </div>
   );
 }
+
+export default ResumeTemplate;
