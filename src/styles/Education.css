@@ -1,0 +1,59 @@
+.edit-mode {
+  padding: 1rem;
+}
+
+.view-mode {
+  border-bottom: 2px solid #2c3e50;
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.view-mode h2 {
+  margin: 0.5rem 0;
+  color: #2c3e50;
+  font-size: 1.2rem;
+  font-weight: normal;
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.view-mode h2:first-child {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1a252f;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+section {
+  margin: 1rem 0;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+button {
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1a252f;
+}

@@ -1,0 +1,27 @@
+.edit-mode {
+  padding: 1rem;
+}
+
+.view-mode {
+  border-bottom: 2px solid #2c3e50;
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.view-mode h2 {
+  margin: 0.5rem 0;
+  color: #2c3e50;
+  font-size: 1.2rem;
+  font-weight: normal;
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.view-mode h2:first-child {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1a252f;
+  margin-bottom: 1rem;
+  display: block;
+}
