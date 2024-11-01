@@ -45,8 +45,8 @@ function Education({ isViewMode }) {
     return (
       <div className="view-mode">
         <section>
-          <h2>School Name: {education.schoolName}</h2>
-          <h2>Title of Study: {education.titleOfStudy}</h2>
+          <h2>{education.schoolName}</h2>
+          <h2>{education.titleOfStudy}</h2>
           <h2>Date of Study: {education.dateOfStudy}</h2>
         </section>
       </div>
