@@ -44,6 +44,7 @@ function Education({ isViewMode }) {
   function VieweableEducationField({ education }) {
     return (
       <div className="view-mode">
+        <h1>Education</h1>
         <section>
           <h2>{education.schoolName}</h2>
           <h2>{education.titleOfStudy}</h2>

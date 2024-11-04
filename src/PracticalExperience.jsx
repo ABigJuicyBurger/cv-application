@@ -42,6 +42,7 @@ function PracticalExperience({ isViewMode }) {
   function VieweablePracticalExperienceField({ experience }) {
     return (
       <div className="view-mode">
+        <h1>Practical Experience</h1>
         <section>
           <h2>{experience.companyName}</h2>
           <h2>{experience.positionTitle}</h2>

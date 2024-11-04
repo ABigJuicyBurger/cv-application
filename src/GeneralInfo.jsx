@@ -21,7 +21,7 @@ function GeneralInfo({ isViewMode }) {
   return (
     <div>
       {!isViewMode ? (
-        <div className="edit-mode">
+        <div className="general-info-edit-mode">
           <h1>General Information</h1>
           <section>
             <label>Name</label>
@@ -36,7 +36,7 @@ function GeneralInfo({ isViewMode }) {
           </section>
         </div>
       ) : (
-        <div className="view-mode">
+        <div className="general-info-view-mode">
           <section>
             <h2>{name}</h2>
             <h2>Email: {email}</h2>
