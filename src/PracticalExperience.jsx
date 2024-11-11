@@ -42,7 +42,6 @@ function PracticalExperience({ isViewMode }) {
   function VieweablePracticalExperienceField({ experience }) {
     return (
       <div className="view-mode">
-        <h1>Practical Experience</h1>
         <section>
           <h2>{experience.companyName}</h2>
           <h2>{experience.positionTitle}</h2>
@@ -70,21 +69,20 @@ function PracticalExperience({ isViewMode }) {
 
     return (
       <div>
-        <h1>
-          Practical Experience
-          {isFirst && (
+        {isFirst ? (
+          <h1>
+            Practical Experience
             <button onClick={addPracticalExperienceList}>
               Add Practical Experience Field
             </button>
-          )}
-          {!isFirst && (
-            <button
-              onClick={() => removePracticalExperienceComponent(experience.id)}
-            >
-              Remove Practical Experience Field
-            </button>
-          )}
-        </h1>
+          </h1>
+        ) : (
+          <button
+            onClick={() => removePracticalExperienceComponent(experience.id)}
+          >
+            Remove Practical Experience Field
+          </button>
+        )}
         <section>
           <label htmlFor={`company-${experience.id}`}>Company Name</label>
           <input
@@ -123,6 +121,7 @@ function PracticalExperience({ isViewMode }) {
 
   return (
     <div>
+      {isViewMode && <h1>Practical Experience</h1>}
       {practicalExperienceEntries.map((entry, index) => (
         <div key={entry.id}>
           {!isViewMode ? (

@@ -44,7 +44,6 @@ function Education({ isViewMode }) {
   function VieweableEducationField({ education }) {
     return (
       <div className="view-mode">
-        <h1>Education</h1>
         <section>
           <h2>{education.schoolName}</h2>
           <h2>{education.titleOfStudy}</h2>
@@ -71,17 +70,16 @@ function Education({ isViewMode }) {
 
     return (
       <div>
-        <h1>
-          Education
-          {isFirst && (
+        {isFirst ? (
+          <h1>
+            Education
             <button onClick={addEducationList}>Add Education Field</button>
-          )}
-          {!isFirst && (
-            <button onClick={() => removeEducationComponent(education.id)}>
-              Remove Education Field
-            </button>
-          )}
-        </h1>
+          </h1>
+        ) : (
+          <button onClick={() => removeEducationComponent(education.id)}>
+            Remove Education Field
+          </button>
+        )}
         <section>
           <label htmlFor={`school-${education.id}`}>School Name</label>
           <input
@@ -111,6 +109,7 @@ function Education({ isViewMode }) {
 
   return (
     <div>
+      {isViewMode && <h1>Education</h1>}
       {educationEntries.map((entry, index) => (
         <div key={entry.id}>
           {!isViewMode ? (
